@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: nacos-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 115.159.58.124:8848,115.159.58.124:8849,115.159.58.124:8850
+server:
+  port: 9000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
