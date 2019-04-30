@@ -11,34 +11,34 @@ spring:
  profiles: local
  datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://10.66.119.177:3306/demo?characterEncoding=utf-8
+    url: jdbc:mysql://XXXX/demo?characterEncoding=utf-8
     username: root
-    password: taikang123
+    password: XXXX
  cloud:
    nacos:
      discovery:
-       server-addr: 115.159.58.124:8848,115.159.58.124:8849,115.159.58.124:8850
+       server-addr: XXXX:8848,XXXX:8849,XXXX:8850
 ---
 spring:
  profiles: test
  datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://172.21.32.8/air?characterEncoding=utf-8
+    url: jdbc:mysql://XXXX/air?characterEncoding=utf-8
     username: root
     password: root
  cloud:
    nacos:
      discovery:
-       server-addr: 115.159.58.124:8848
+       server-addr: XXXX:8848
 ---
 spring:
  profiles: pro
  datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://172.21.32.8/air?characterEncoding=utf-8
+    url: jdbc:mysql://XXXX/air?characterEncoding=utf-8
     username: root
     password: root
  cloud:
    nacos:
      discovery:
-       server-addr: 115.159.58.124:8848
+       server-addr: XXXX:8848
